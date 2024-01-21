@@ -97,4 +97,4 @@ if ( argument_count == 4 ) :
         sys.exit( 0 );
 
 print( f"*** Invalid arguments : { argument_array }" );
-print( "Usage: python brush.py data.csv 1 2 IMAGE_FOLDER/" );
+print( "Usage: python brush.py data.csv <step count> <image count> IMAGE_FOLDER/" );
