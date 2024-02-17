@@ -5,5 +5,5 @@ echo "https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Window
 python.exe -m pip install --upgrade pip"
 pip uninstall accelerate diffusers safetensors torch torchvision transformers xformers
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
-pip install accelerate diffusers safetensors transformers xformers
+pip install accelerate diffusers pandas safetensors transformers xformers
 pause

@@ -1,2 +1,2 @@
-python ../CODE/brush.py data.csv 3 3 OUT/
+python ../CODE/brush.py data.csv 3 5 OUT/
 pause

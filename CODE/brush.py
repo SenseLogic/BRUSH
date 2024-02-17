@@ -1,8 +1,8 @@
 ## -- IMPORTS
 
-import csv;
 from diffusers import AutoPipelineForText2Image;
 import os;
+import pandas;
 import random;
 import re;
 import torch;
@@ -47,52 +47,51 @@ if ( argument_count == 4 ) :
 
         print( "Reading data :", data_file_path );
 
-        with open( data_file_path, newline = "", encoding = "utf-8" ) as data_file :
+        data_frame = pandas.read_csv( data_file_path );
+        data_frame.fillna('', inplace=True)
 
-            csv_reader = csv.reader( data_file );
-            next( csv_reader );
+        for _, row in data_frame.iterrows() :
 
-            for row in csv_reader :
+            image_file_label = row[ "image_file_label" ]
+            prompt = row[ "prompt" ];
 
-                image_file_label, prompt = row;
+            if ( image_file_label == "" ) :
 
-                if ( image_file_label == "" ) :
+                image_file_label = re.sub( r"_+", "_", re.sub( r"\W", "_", prompt ) ).strip( "_" );
 
-                    image_file_label = re.sub( r"_+", "_", re.sub( r"\W", "_", prompt ) ).strip( "_" );
+            print( "Processing prompt :", prompt );
 
-                print( "Processing prompt :", prompt );
+            for image_index in range( image_count ) :
 
-                for image_index in range( image_count ) :
+                image_file_path = image_folder_path + image_file_label + "_" + str( image_index + 1 ) + ".png";
 
-                    image_file_path = image_folder_path + image_file_label + "_" + str( image_index + 1 ) + ".png";
+                if ( os.path.exists( image_file_path ) ) :
 
-                    if ( os.path.exists( image_file_path ) ) :
+                    print( "Keeping image :", image_file_path );
 
-                        print( "Keeping image :", image_file_path );
+                else :
 
-                    else :
+                    print( "Drawing image :", image_file_path );
 
-                        print( "Drawing image :", image_file_path );
+                    seed = random.randint( 1, 999999 );
 
-                        seed = random.randint( 1, 999999 );
+                    image = (
+                        model(
+                            prompt,
+                            num_inference_steps = step_count,
+                            guidance_scale = 0.0,
+                            generator = torch.manual_seed( seed )
+                            ).images[ 0 ]
+                        );
 
-                        image = (
-                            model(
-                                prompt,
-                                num_inference_steps = step_count,
-                                guidance_scale = 0.0,
-                                generator = torch.manual_seed( seed )
-                                ).images[ 0 ]
-                            );
+                    print( "Saving image :", image_file_path );
+                    image.save( image_file_path );
 
-                        print( "Saving image :", image_file_path );
-                        image.save( image_file_path );
+                    upscaled_image = image.resize( ( 1024, 1024 ), 1 );
+                    upscaled_image_file_path = image_file_path[ :-4 ] + "_upscaled.png";
 
-                        upscaled_image = image.resize( ( 1024, 1024 ), 1 );
-                        upscaled_image_file_path = image_file_path[ :-4 ] + "_upscaled.png";
-
-                        print( "Saving upscaled image :", upscaled_image_file_path );
-                        upscaled_image.save( upscaled_image_file_path );
+                    print( "Saving upscaled image :", upscaled_image_file_path );
+                    upscaled_image.save( upscaled_image_file_path );
 
         sys.exit( 0 );
 
