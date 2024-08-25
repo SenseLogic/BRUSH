@@ -1,25 +1,57 @@
-image_file_label,prompt
-,a dog
-,a digital drawing of a dog
-,a realistic picture of a dog
-,a hot air balloon
-,a digital drawing of a hot air balloon
-,a realistic picture of a hot air balloon
-,a car
-,a digital drawing of a car
-,a realistic picture of a car
-,a father
-,a digital drawing of a father
-,a realistic picture of a father
-,a mother
-,a digital drawing of a mother
-,a realistic picture of a mother
-,a house
-,a digital drawing of a house
-,a realistic picture of a house
-,an apple over a pure white background
-,a digital drawing of an apple over a pure white background
-,a realistic picture of an apple over a pure white background
-,a giant gorilla fighting biplanes from the top of a skyscraper
-,a digital drawing of a giant gorilla fighting biplanes from the top of a skyscraper
-,a realistic picture of a giant gorilla fighting biplanes from the top of a skyscraper
+prompt,image_file_label,image_count,width,height,inference_step_count,guidance_scale,upscaling_factor
+illustration of a dog over a pure white background
+line art of a dog over a pure white background
+digital painting of a dog over a pure white background
+3d model of a dog over a pure white background
+concept art of a dog over a pure white background
+cinematic shot of a dog
+hyper-realistic photography of a dog
+illustration of a hot air balloon over a pure white background
+line art of a hot air balloon over a pure white background
+digital painting of a hot air balloon over a pure white background
+3d model of a hot air balloon over a pure white background
+concept art of a hot air balloon over a pure white background
+cinematic shot of a hot air balloon
+hyper-realistic photography of a hot air balloon
+illustration of a car over a pure white background
+line art of a car over a pure white background
+digital painting of a car over a pure white background
+3d model of a car over a pure white background
+concept art of a car over a pure white background
+cinematic shot of a car
+hyper-realistic photography of a car
+illustration of a house over a pure white background
+line art of a house over a pure white background
+digital painting of a house over a pure white background
+3d model of a house over a pure white background
+concept art of a house over a pure white background
+cinematic shot of a house
+hyper-realistic photography of a house
+illustration of an apple over a pure white background
+line art of an apple over a pure white background
+digital painting of an apple over a pure white background
+3d model of an apple over a pure white background
+concept art of an apple over a pure white background
+cinematic shot of an apple over a pure white background
+hyper-realistic photography of an apple over a pure white background
+illustration of a father holding his child over a pure white background
+line art of a father holding his child over a pure white background
+digital painting of a father holding his child over a pure white background
+3d model of a father holding his child over a pure white background
+concept art of a father holding his child over a pure white background
+cinematic shot of a father holding his child
+hyper-realistic photography of a father holding his child
+illustration of a mother holding her child over a pure white background
+line art of a mother holding her child over a pure white background
+digital painting of a mother holding her child over a pure white background
+3d model of a mother holding her child over a pure white background
+concept art of a mother holding her child over a pure white background
+cinematic shot of a mother holding her child
+hyper-realistic photography of a mother holding her child
+illustration of a giant King Kong gorilla fighting vintage warplanes from the top of a skyscraper
+line art of a giant King Kong gorilla fighting vintage warplanes from the top of a skyscraper
+digital painting of a giant King Kong gorilla fighting vintage warplanes from the top of a skyscraper
+3d model of a giant King Kong gorilla fighting vintage warplanes from the top of a skyscraper
+concept art of a giant King Kong gorilla fighting vintage warplanes from the top of a skyscraper
+cinematic shot of a giant King Kong gorilla fighting vintage warplanes from the top of a skyscraper
+hyper-realistic photography of a giant King Kong gorilla fighting vintage warplanes from the top of a skyscraper
