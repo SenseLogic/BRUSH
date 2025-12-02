@@ -1,4 +1,5 @@
 prompt,image_file_label,image_count,width,height,inference_step_count,guidance_scale,upscaling_factor
-Pixar-style full-body image of a dog over a pure white background.
-Pixar-style full-body image of a barking dog over a pure white background.
-Pixar-style image of a house over a pure white background.
+"a dog (Pixar style, full body shot, pure white background)"
+"a barking dog (Pixar style, full body shot, pure white background)"
+"a house (Pixar style, full body shot, pure white background)"
+"Julio plays tennis with Rachel (Pixar style, full body shot, blurry background)"
