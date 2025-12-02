@@ -1,20 +1,20 @@
-## -- IMPORTS
+# -- IMPORTS
 
-from diffusers import FluxPipeline;
 import os;
 import pandas;
 import random;
 import re;
 import torch;
 import sys;
+from diffusers import FluxPipeline;
 
-## -- FUNCTIONS
+# -- FUNCTIONS
 
 def GetLogicalPath( path ) :
 
     return path.replace( '\\', '/' );
 
-## -- STATEMENTS
+# -- STATEMENTS
 
 argument_array = sys.argv;
 argument_count = len( argument_array ) - 1;

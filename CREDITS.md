@@ -1,5 +1,6 @@
 # Credits
 
 Thanks to :
-- Black Forest Labs and Huggingface.co for the Flux Schnell AI model
+- Tongyi-MAI for the Z-Image Turbo AI model
+- Black Forest Labs for the Flux Schnell AI model
 - Stability AI and ByteDance for the SDXL Lightning AI model
