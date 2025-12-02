@@ -1,2 +1,3 @@
-del /Q OUT\*.png
+del /Q FLUX\*.png
+del /Q SDXL\*.png
 pause
