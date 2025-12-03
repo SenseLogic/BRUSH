@@ -1,5 +1,8 @@
 prompt,image_file_label,image_count,width,height,inference_step_count,guidance_scale,upscaling_factor
-"a dog (Pixar style, full body shot, pure white background)"
-"a barking dog (Pixar style, full body shot, pure white background)"
-"a house (Pixar style, full body shot, pure white background)"
-"Julio plays tennis with Rachel (Pixar style, full body shot, blurry background)"
+"a dog (Pixar style, full shot, pure white background)"
+"a barking dog (Pixar style, full shot, pure white background)"
+"a house (Pixar style, full shot, pure white background)"
+"a kitchen (Pixar style, full shot, pure white background)"
+"a bed (Pixar style, full shot, pure white background)"
+"a bedroom (Pixar style)"
+"a boy plays tennis (Pixar style)"
