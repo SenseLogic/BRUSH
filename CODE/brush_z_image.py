@@ -26,8 +26,7 @@ if ( argument_count >= 1 ) :
     default_width = int( argument_array[ 3 ] ) if ( argument_count >= 3 ) else 1024;
     default_height = int( argument_array[ 4 ] ) if ( argument_count >= 4 ) else 1024;
     default_image_count = int( argument_array[ 5 ] ) if ( argument_count >= 5 ) else 1;
-    default_inference_step_count = int( argument_array[ 6 ] ) if ( argument_count >= 6 ) else 4;
-    default_guidance_scale = float( argument_array[ 7 ] ) if ( argument_count >= 7 ) else 3;
+    default_inference_step_count = int( argument_array[ 6 ] ) if ( argument_count >= 6 ) else 9;
 
     if ( data_file_path.endswith( ".csv" )
          and image_folder_path.endswith( "/" ) ) :
@@ -96,4 +95,4 @@ if ( argument_count >= 1 ) :
         sys.exit( 0 );
 
 print( f"*** Invalid arguments : { argument_array }" );
-print( "Usage: python brush.py data.csv <IMAGE_FOLDER/|> <image width|1024> <image height|1024> <image count|1> <inference step count|4>" );
+print( "Usage: python brush.py data.csv <IMAGE_FOLDER/|> <image width|1024> <image height|1024> <image count|1> <inference step count|9>" );
